@@ -86,7 +86,7 @@ section{
 
 }
 #home{
-    background-image: url(/Image/bg2.jpg);
+    background-image: url(/Image/bg3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -130,7 +130,46 @@ section{
  
     
   }
+    /* Service Section */
+  #service{
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
 
+
+    }
+  #service h2{
+    text-align: center;
+    padding-top:  10rem;
+ 
+  }
+  #service .container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .services{
+      margin-top: -15rem;
+  }
+  #service .box{
+    display: flex;
+   
+  }
+  .serviceproduct{
+    background-color: rgb(15, 15, 15);
+    margin-left: 2rem;
+    border-radius: 2rem;
+    width: 20rem;
+    padding: 2rem;
+
+  }
+  .serviceproduct:hover{
+    border:  solid var(--main-color) 2px;
+    background-color: transparent;
+    box-shadow: 2px 2px 2px var(--main-color);
+    transform: scale(1.1);
+  }
 
   /* Pricing Section */
 
@@ -144,6 +183,9 @@ section{
  #priceheader{
  
     text-align: center;
+  }
+  .serviceproduct span{
+    color: var(--main-color)
   }
 
 
