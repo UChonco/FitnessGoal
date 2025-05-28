@@ -16,6 +16,7 @@
     --sub-color:#00000083;
     --text-color:#fff;
     --main-color:rgb(0, 68, 255);
+    --bg2-color: rgb(10, 10, 10);
 
 }
 header{
@@ -133,8 +134,7 @@ section{
     /* Service Section */
   #service{
       height: 100vh;
-      background-size: cover;
-      background-repeat: no-repeat;
+   background-color:var(--bg2-color)
 
 
     }
@@ -162,6 +162,7 @@ section{
     border-radius: 2rem;
     width: 20rem;
     padding: 2rem;
+    transition: all 0,5s ease;
 
   }
   .serviceproduct:hover{
@@ -216,4 +217,67 @@ section{
   cursor: pointer;
   box-shadow: 2px 2px 2px 2px var(--main-color);
   transform: scale(1.2);
+}
+
+#ads{
+  height: 20vh;
+
+
+}
+
+/*About US*/
+#about{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg2-color);
+}
+.aboutcontainer{
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    padding: 4rem;
+    border-radius: 2rem;
+    box-sizing: 2px 2px 2px grey;
+}
+.aboutcontainer span{
+  color: var(--main-color);
+}
+.aboutinfo{
+  display: flex;
+  justify-content: space-between;
+
+}
+.aboutbox{
+    text-align:left;
+    background-color: rgb(10, 10, 10);
+    border-radius: 2rem;
+    padding: 2rem;
+    height: 18rem;
+    width: 22rem;
+    transition: all 0,5s ease;
+    
+}
+
+.aboutbox:hover{
+   border: solid var(--main-color) 2px;
+   transform: scale(1.1);
+}
+
+#contact{
+  height: 50vh;
+  text-align: center;
+  background-color:var(--main-color)
+}
+.contactheader{
+padding-top: 2rem;
+}
+.contactcontainer{
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.contactbox{
+  text-align: left;
+  padding: 2rem;
 }
